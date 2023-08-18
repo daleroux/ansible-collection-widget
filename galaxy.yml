@@ -1,0 +1,56 @@
+---
+# https://docs.ansible.com/ansible/latest/dev_guide/collections_galaxy_meta.html
+
+namespace: "daleroux"
+
+name: "widget"
+
+version: 1.0.0
+
+readme: README.md
+
+authors:
+  - "d@nleroux.ca"
+
+description: "widget collection for linux"
+
+license:
+  - "GPL-3.0-or-later"
+
+license_file: "LICENSE"
+
+# TODO: Add tags for indexing/searching this collection
+#
+# A list of tags you want to associate with the collection for indexing/searching.
+# A tag name has the same character requirements as `namespace` and `name`
+tags:
+  - "linux"
+
+# Best practice is for collections to work as standalone, independent units, depending only on ansible-core.
+# https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_shared.html#listing-collection-dependencies
+# dependencies: {}
+
+# NOTE: The URL of the originating SCM repository
+repository: "https://github.com/daleroux/ansible-collection-widget"
+
+# NOTE: The URL to any online docs
+# documentation: "https://github.com/daleroux/ansible-collection-widget/wiki"
+
+# NOTE: The URL to the homepage of the collection/project
+# homepage: "https://github.com/daleroux/ansible-collection-widget"
+
+# NOTE: The URL to the collection issue tracker
+issues: "https://github.com/daleroux/ansible-collection-widget/issues"
+
+# `build_ignore` is mutually exclusive with `manifest`
+# https://docs.ansible.com/ansible/devel/dev_guide/developing_collections_distributing.html#ignoring-files-and-folders
+build_ignore:
+  - .gitignore
+  - .github
+  - '*/.gitkeep'
+  - .pre-commit-config.yaml
+  - changelogs/.plugin-cache.yaml
+
+# `manifest` is mutually exclusive with `build_ignore`
+# https://docs.ansible.com/ansible/devel/dev_guide/developing_collections_distributing.html#manifest-directives
+# manifest: null
